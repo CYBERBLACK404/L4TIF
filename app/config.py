@@ -36,7 +36,7 @@ class Config:
 \033[1;97m{\033[1;91m*\033[1;97m} AUTHOR     : MASLAKHUDIN LATIF
 \033[1;97m{\033[1;91m*\033[1;97m} GITHUB     : https://github.com/DARKFACEBOOK378/L4TIF
 \033[1;97m{\033[1;91m*\033[1;97m} FACEBOOK   : https://www.facebook.com/CYBER.GHOST.378
-\033[1;94m_________________________________________________________'''
+\033[1;97m_________________________________________________________'''
 
 	def httpRequest(self, url, cookies):
 		try:
