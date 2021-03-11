@@ -34,7 +34,6 @@ class Brute(object):
 		self.menu += '  [ \033[0;96m05\033[0m ]  Mulai Crack\n'
 		self.menu += '  [ \033[0;96m00\033[0m ]  Hapus cookies\n'
 		if self.cookie == False:
-                print('\033[1;94m_________________________________________________________')
 			login.loginFb(self, self.url, self.config)
 			self.cookie = self.config.loadCookie()
 
