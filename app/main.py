@@ -55,7 +55,7 @@ class Brute(object):
 		print(self.config.banner())
 		html = parser(response, 'html.parser')
 		print('_________________________________________________________')
-		print('\n(\033[0;96m•\033[0m)     Nama Akun Facebook : '.decode('utf-8')+html.title.text.upper())
+		print('\n(\033[0;96m•\033[0m)       \033[1;92mNama Akun Facebook : '.decode('utf-8')+html.title.text.upper())
 		print('\033[1;94m_________________________________________________________')
 		print(self.menu)
 		try:
@@ -73,12 +73,12 @@ class Brute(object):
 		elif choose == 5:
 			exit(crack.Brute().main())
 		elif choose == 0:
-			ask = raw_input('\nAre you Sure? [y/N]: ')
-			if ask.lower() == 'y':
-				print('\nMenghapus cookies...')
+			ask = raw_input('\nAPAKAH KAMU YAKIN? [Y/N]: ')
+			if ask.lower() == 'Y':
+				print('\nMENGHAPUS COOKIES...')
 				time.sleep(2)
 				os.remove('log/cookies.log')
-				print('\n\033[0;92mSuccess removed!\033[0m')
+				print('\n\033[0;92mSUCCESS REMOVED!\033[0m')
 				time.sleep(2)
 				login.loginFb(self, self.url, self.config)
 				self.cookie = self.config.loadCookie()
@@ -87,4 +87,4 @@ class Brute(object):
 				self.cookie = self.config.loadCookie()
 				print('\ncanceled!')
 				self.start()
-		else: exit('\n\033[0;91mYou stuppid.\033[0m')
+		else: exit('\n\033[0;91mYOU STUPPID.\033[0m')
