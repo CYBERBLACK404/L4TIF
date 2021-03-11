@@ -123,10 +123,10 @@ class Brute:
 			except: pass
 		if len(self.target) == 0:
 			exit("\n\033[0;91m Oops, id not found in file '%s'\033[0m"% file)
-		ask = raw_input('Pakai Password Default Atau Manual? [D/M]: ')
-		if ask.lower() == 'M':
+		ask = raw_input('Pakai Password Default Atau Manual? [D/m]: ')
+		if ask.lower() == 'm':
 			while True:
-				print('\n\033[0;92mSet Pakai Password (,) Buat Password Sesukamu, Misal: Sayang,Anjing,Bangsat,Bismillah\n\033[0m')
+				print('\n\033[0;92mSet Pakai Password (,) Buat Password Baru, Misal: Sayang,Doraemon,Bangsat\n\033[0m')
 				self.setpw = raw_input('Set password: ').strip().split(',')
 				if self.setpw[0] != '':
 					break
