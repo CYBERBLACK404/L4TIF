@@ -126,8 +126,8 @@ class Brute:
 		ask = raw_input('Pakai Password Default Atau Manual? [D/m]: ')
 		if ask.lower() == 'm':
 			while True:
-				print('\n\033[0;92mSet Pakai Password (,) Buat Password Baru, Misal: Sayang,Doraemon,Bangsat\n\033[0m')
-				self.setpw = raw_input('Set password: ').strip().split(',')
+				print('\n\033[0;91mSet Pakai Password (,) Buat Password Baru, \033[0;92mMisal: Sayang,Doraemon,Bangsat\n\033[0m')
+				self.setpw = raw_input('\033[0;91mSet password:\033[0;97m ').strip().split(',')
 				if self.setpw[0] != '':
 					break
 				
