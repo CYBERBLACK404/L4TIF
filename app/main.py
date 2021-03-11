@@ -33,7 +33,7 @@ class Brute(object):
 		self.menu += '  [ \033[0;96m04\033[0m ]  Dump ID Dari Like Status Postingan\n'
 		self.menu += '  [ \033[0;96m05\033[0m ]  Mulai Crack\n'
 		self.menu += '  [ \033[0;96m00\033[0m ]  Hapus cookies\n'
-                print('\033[1;94m_________________________________________________________')
+                print\033[1;94m_________________________________________________________'''
 		if self.cookie == False:
 			login.loginFb(self, self.url, self.config)
 			self.cookie = self.config.loadCookie()
@@ -60,7 +60,7 @@ class Brute(object):
 		print('\033[1;94m_________________________________________________________')
 		print(self.menu)
 		try:
-			choose = int(raw_input('\033[1;91m{Pilih} <==> : '))
+			choose = int(raw_input('\033[1;91m{Pilih} <==> :\033[1;97m '))
 		except ValueError:
 			exit('\n\033[0;91mYou stuppid.\033[0m')
 		if choose == 1:
