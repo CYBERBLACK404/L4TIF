@@ -17,7 +17,7 @@ from src import language
 def loginFb(self, url, config):
 	os.system('clear')
 	print(config.banner())
-	print('\n\033[1;91m[©] Login Pakai Cookie FB Kalian : [©]\n')
+	print('\n\033[1;95m[©] Login Pakai Cookie FB Kalian : [©]\n')
 	while True:
 		cookies = raw_input('TEMPEL COOKIE DI SINI -->: ')
 		response = config.httpRequest(url, cookies).encode('utf-8')
