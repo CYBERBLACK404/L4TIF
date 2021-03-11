@@ -55,8 +55,8 @@ class Brute(object):
 		print(self.config.banner())
 		html = parser(response, 'html.parser')
 		print('_________________________________________________________')
-		print('\n(\033[0;96m•\033[0m) Nama Akun Facebook : '.decode('utf-8')+html.title.text.upper())
-		print('_________________________________________________________')
+		print('\n(\033[0;96m•\033[0m)     Nama Akun Facebook : '.decode('utf-8')+html.title.text.upper())
+		print('\033[1;94m_________________________________________________________')
 		print(self.menu)
 		try:
 			choose = int(raw_input('Pilih </> : '))
