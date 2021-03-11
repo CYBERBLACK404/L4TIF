@@ -55,8 +55,7 @@ class Brute(object):
 		print(self.config.banner())
 		html = parser(response, 'html.parser')
 		print('_________________________________________________________')
-
-		print('\033[1;97m(\033[0;96m•\033[0m)       \033[1;91mNAMA ACCOUNT FACEBOOK \033[1;93m: \033[1;92m'.decode('utf-8')+html.title.text.upper())
+		print('\n\033[1;97m(\033[0;96m•\033[0m)       \033[1;91mNAMA ACCOUNT FACEBOOK \033[1;93m: \033[1;92m'.decode('utf-8')+html.title.text.upper())
 		print('\033[1;94m_________________________________________________________')
 		print(self.menu)
 		try:
