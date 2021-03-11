@@ -19,7 +19,7 @@ def loginFb(self, url, config):
 	print(config.banner())
 	print('\n\033[1;91m[©] Login Pakai Cookie FB Kalian : [©]\n')
 	while True:
-		cookies = raw_input(\033[1;95m'TEMPEL COOKIE DI SINI -->: ')
+		cookies = raw_input('TEMPEL COOKIE DI SINI -->: ')
 		response = config.httpRequest(url, cookies).encode('utf-8')
 		if 'mbasic_logout_button' in str(response):
 			print('\nSABAR DULU NGENTOT LAGI PROSES...')
