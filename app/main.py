@@ -27,7 +27,7 @@ class Brute(object):
 		self.config = config.Config()
 		self.cookie = self.config.loadCookie()
 		self.menu = '\n'
-		self.menu += '  [ \033[0;96m01\033[0m ]  Dump ID Teman List\n'
+		self.menu += '  \033[1;97m[ \033[0;96m01\033[0m ]  Dump ID Teman List\n'
 		self.menu += '  [ \033[0;96m02\033[0m ]  Dump ID Teman Publik\n'
 		self.menu += '  [ \033[0;96m03\033[0m ]  Dump ID Dari Pencarian Nama\n'
 		self.menu += '  [ \033[0;96m04\033[0m ]  Dump ID Dari Like Status Postingan\n'
@@ -55,11 +55,11 @@ class Brute(object):
 		print(self.config.banner())
 		html = parser(response, 'html.parser')
 		print('_________________________________________________________')
-		print('\n(\033[0;96m•\033[0m)       \033[1;91mNAMA ACCOUNT FACEBOOK \033[1;93m: \033[1;92m'.decode('utf-8')+html.title.text.upper())
+		print('\033[1;97m(\033[0;96m•\033[0m)       \033[1;91mNAMA ACCOUNT FACEBOOK \033[1;93m: \033[1;92m'.decode('utf-8')+html.title.text.upper())
 		print('\033[1;94m_________________________________________________________')
 		print(self.menu)
 		try:
-			choose = int(raw_input('\033[1;91m{Pilih} <==> :\033[1;97m '))
+			choose = int(raw_input('\033[1;91m { Pilih } <==> :\033[1;97m '))
 		except ValueError:
 			exit('\n\033[0;91mYou stuppid.\033[0m')
 		if choose == 1:
