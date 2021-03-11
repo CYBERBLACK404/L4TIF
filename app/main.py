@@ -73,12 +73,12 @@ class Brute(object):
 		elif choose == 5:
 			exit(crack.Brute().main())
 		elif choose == 0:
-			ask = raw_input('\nAPAKAH ANDA YAKIN? [Y/N]: ')
-			if ask.lower() == 'Y':
+			ask = raw_input('\nAre you Sure? [y/N]: ')
+			if ask.lower() == 'y':
 				print('\nMenghapus cookies...')
 				time.sleep(2)
 				os.remove('log/cookies.log')
-				print('\n\033[0;92mSUCCESS REMOVED!\033[0m')
+				print('\n\033[0;92mSuccess removed!\033[0m')
 				time.sleep(2)
 				login.loginFb(self, self.url, self.config)
 				self.cookie = self.config.loadCookie()
